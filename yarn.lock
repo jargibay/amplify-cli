@@ -3080,13 +3080,6 @@
   dependencies:
     moment ">=2.14.0"
 
-"@types/nexpect@0.4.30":
-  version "0.4.30"
-  resolved "https://registry.yarnpkg.com/@types/nexpect/-/nexpect-0.4.30.tgz#08919064509d78b2b75e7150b07d718597bff9ab"
-  integrity sha512-7JEP3RT7lMjhPSFhHBkBpikReNCBdU8TaYCLLeH8Y74/Prm1hScLZIhvIFo6CBZV7fEiAw35E+cKQVOvbBZvUw==
-  dependencies:
-    "@types/node" "*"
-
 "@types/node@*", "@types/node@>= 8":
   version "13.7.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-13.7.1.tgz#238eb34a66431b71d2aaddeaa7db166f25971a0d"
@@ -13289,14 +13282,7 @@ netmask@^1.0.6:
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
   integrity sha1-ICl+idhvb2QA8lDZ9Pa0wZRfzTU=
 
-nexpect@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/nexpect/-/nexpect-0.6.0.tgz#6c8c6460d418c0855e8b65462474a73f256a753b"
-  integrity sha512-gG4cO0zoNG+kaPesw516hPVEKLW3YizGU8UWMr5lpkHKOgoTWcu4sPQN7rWVAIL4Ck87zM4N8immPUhYPdDz3g==
-  dependencies:
-    cross-spawn "^6.0.5"
-
-"nexpect@file:./packages/amplify-e2e-tests/src/utils/nexpect-modified":
+"nexpect@file:packages/amplify-e2e-tests/src/utils/nexpect-modified":
   version "0.5.0"
 
 next-tick@~1.0.0:

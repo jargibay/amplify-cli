@@ -483,9 +483,9 @@ workflows:
           requires:
             - build
             - mock_e2e_tests
-      - mock_e2e_tests:
-          requires:
-            - build
+      # - mock_e2e_tests:
+      #     requires:
+      #       - build
       - integration_test:
           filters:
             branches:
@@ -501,6 +501,7 @@ workflows:
               only:
                 - master
                 - e2e-from-verdaccio
+                - e2e2
           requires:
             - build
       - amplify_e2e_tests:
@@ -509,6 +510,7 @@ workflows:
               only:
                 - master
                 - e2e-from-verdaccio
+                - e2e2
           requires:
             - publish_to_local_registry
       - deploy:

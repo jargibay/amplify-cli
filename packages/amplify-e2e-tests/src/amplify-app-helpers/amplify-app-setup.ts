@@ -1,4 +1,4 @@
-import * as nexpect from '../utils/nexpect-modified';
+import * as nexpect from 'nexpect';
 import * as path from 'path';
 import { isCI } from '../utils';
 

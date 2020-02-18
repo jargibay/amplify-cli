@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/node": "^10.17.13",
     "dotenv": "^8.2.0",
-    "nexpect": "file:./src/utils/nexpect-modified",
+    "nexpect": "file:../amplify-e2e-tests/src/utils/nexpect-modified",
     "rimraf": "^3.0.0",
     "ts-node": "^8.6.2"
   },

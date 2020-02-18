@@ -44,7 +44,7 @@ describe('amplify add auth...', () => {
     deleteProjectDir(projRoot);
   });
 
-  it('...should init a project and add auth with defaults', async () => {
+  it.skip('...should init a project and add auth with defaults', async () => {
     await initJSProjectWithProfile(projRoot, defaultsSettings);
     await addAuthWithDefault(projRoot, {});
     await amplifyPushAuth(projRoot);
@@ -54,7 +54,7 @@ describe('amplify add auth...', () => {
     expect(userPool.UserPool).toBeDefined();
   });
 
-  it('...should init a project and add auth with defaultSocial', async () => {
+  it.skip('...should init a project and add auth with defaultSocial', async () => {
     await initJSProjectWithProfile(projRoot, defaultsSettings);
     await addAuthWithDefaultSocial(projRoot, {});
     await amplifyPushAuth(projRoot);
@@ -160,7 +160,7 @@ describe('amplify updating auth...', () => {
     deleteProjectDir(projRoot);
   });
 
-  it('...should init a project and add auth with a custom trigger, and then update to remove the custom js while leaving the other js', async () => {
+  it.skip('...should init a project and add auth with a custom trigger, and then update to remove the custom js while leaving the other js', async () => {
     await initJSProjectWithProfile(projRoot, defaultsSettings);
     await addAuthWithCustomTrigger(projRoot, {});
     await amplifyPushAuth(projRoot);
