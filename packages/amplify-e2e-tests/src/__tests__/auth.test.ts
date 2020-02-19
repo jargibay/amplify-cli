@@ -86,7 +86,7 @@ describe('amplify add auth...', () => {
     expect(lambdaFunction.Configuration.Environment.Variables.GROUP).toEqual('mygroup');
   });
 
-  it('...should allow the user to add auth via API category, with a trigger', async () => {
+  it.skip('...should allow the user to add auth via API category, with a trigger', async () => {
     await initJSProjectWithProfile(projRoot, defaultsSettings);
     await addAuthViaAPIWithTrigger(projRoot, {});
     await amplifyPush(projRoot);
@@ -103,7 +103,7 @@ describe('amplify add auth...', () => {
     expect(lambdaFunction.Configuration.Environment.Variables.GROUP).toEqual('mygroup');
   });
 
-  it('...should init a project and add 3 custom auth flow triggers for Google reCaptcha', async () => {
+  it.skip('...should init a project and add 3 custom auth flow triggers for Google reCaptcha', async () => {
     await initJSProjectWithProfile(projRoot, defaultsSettings);
     await addAuthWithRecaptchaTrigger(projRoot, {});
     await amplifyPushAuth(projRoot);
@@ -126,7 +126,7 @@ describe('amplify add auth...', () => {
     expect(verifyFunction.Configuration.Environment.Variables.RECAPTCHASECRET).toEqual('dummykey');
   });
 
-  it('...should init a project where all possible options are selected', async () => {
+  it.skip('...should init a project where all possible options are selected', async () => {
     await initJSProjectWithProfile(projRoot, defaultsSettings);
     await addAuthWithMaxOptions(projRoot, {});
     await amplifyPushAuth(projRoot);
@@ -186,7 +186,7 @@ describe('amplify updating auth...', () => {
     expect(updatedFunction.Configuration.Environment.Variables.MODULES).toEqual('email-filter-blacklist');
   });
 
-  it('...should init an android project and add customAuth flag, and remove flag when custom auth triggers are removed upon update ', async () => {
+  it.skip('...should init an android project and add customAuth flag, and remove flag when custom auth triggers are removed upon update ', async () => {
     await initAndroidProjectWithProfile(projRoot, defaultsSettings);
     await addAuthWithRecaptchaTrigger(projRoot, {});
     await amplifyPushAuth(projRoot);
@@ -200,7 +200,7 @@ describe('amplify updating auth...', () => {
     expect(meta.Auth.Default.authenticationFlowType).toEqual('USER_SRP_AUTH');
   });
 
-  it('...should init an ios project and add customAuth flag, and remove the flag when custom auth triggers are removed upon update', async () => {
+  it.skip('...should init an ios project and add customAuth flag, and remove the flag when custom auth triggers are removed upon update', async () => {
     await initIosProjectWithProfile(projRoot, defaultsSettings);
     await addAuthWithRecaptchaTrigger(projRoot, {});
     await amplifyPushAuth(projRoot);
